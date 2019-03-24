@@ -1,0 +1,193 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:wb="http://open.weibo.com/wb">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gbk" />
+	<title>股票入门</title>
+	<link rel="stylesheet" href="../../css/rumen.css">
+	<script type="text/javascript" src="../../js/jquery-1.8.3.min.js"></script>
+</head>
+<body>
+	<!--#include virtual="/inc/header.html"-->
+
+	<img class="banner" src="../../images/rumenbanner.png" alt="">
+	<div class="link gupiaorumen">
+				<div class="title">
+					<p style="color: #821c21; border-bottom: none;"><img src="../../images/icon5.png" alt="">股票入门</p>
+				</div>
+			</div>
+	<div class="content ">
+		<div class="content-left">
+			
+			<div class="rumen">
+				<div class="title">
+					<p><img src="../../images/icon4.png" alt="">基础知识</p>
+					<span><a href="">更多》</a></span>
+				</div>
+				<ul>
+                  <JRJTAG	
+                  tagtype="01"
+                  clsid="627001002" 
+                  pagesize="4" 
+                  pagecount="1"
+                   id="jczs" />
+                    <#if jczs?exists>
+                        <#list jczs as d>                         
+                            <li><a target='_blank' href="${d.infourl}" title="${d.title}" >${d.title}</a></li>
+                        </#list>
+                    </#if>
+				</ul>
+			</div>
+			<div class="mairu">
+				<div class="title">
+					<p><img src="../../images/icon4.png" alt="">交易指南</p>
+					<span><a href="">更多》</a></span>
+				</div>
+				<ul>
+					<JRJTAG	
+                  tagtype="01"
+                  clsid="627001003" 
+                  pagesize="4" 
+                  pagecount="1"
+                   id="jczs" />
+                    <#if jczs?exists>
+                        <#list jczs as d>                         
+                            <li><a target='_blank' href="${d.infourl}" title="${d.title}" >${d.title}</a></li>
+                        </#list>
+                    </#if>
+				</ul>
+			</div>
+			<div class="rumen">
+				<div class="title">
+					<p><img src="../../images/icon4.png" alt="">政策法规</p>
+					<span><a href="">更多》</a></span>
+				</div>
+				<ul>
+					<JRJTAG	
+                  tagtype="01"
+                  clsid="627001004" 
+                  pagesize="4" 
+                  pagecount="1"
+                   id="jczs" />
+                    <#if jczs?exists>
+                        <#list jczs as d>                         
+                            <li><a target='_blank' href="${d.infourl}" title="${d.title}" >${d.title}</a></li>
+                        </#list>
+                    </#if>
+				</ul>
+			</div>
+			<div class="mairu">
+				<div class="title">
+					<p><img src="../../images/icon4.png" alt="">专业术语</p>
+					<span><a href="">更多》</a></span>
+				</div>
+				<ul>
+					<JRJTAG	
+                  tagtype="01"
+                  clsid="627001005" 
+                  pagesize="4" 
+                  pagecount="1"
+                   id="jczs" />
+                    <#if jczs?exists>
+                        <#list jczs as d>                         
+                            <li><a target='_blank' href="${d.infourl}" title="${d.title}" >${d.title}</a></li>
+                        </#list>
+                    </#if>
+				</ul>
+			</div>
+			<div class="rumen">
+				<div class="title">
+					<p><img src="../../images/icon4.png" alt="">学习指南</p>
+					<span><a href="">更多》</a></span>
+				</div>
+				<ul>
+					<JRJTAG	
+                  tagtype="01"
+                  clsid="627001006" 
+                  pagesize="4" 
+                  pagecount="1"
+                   id="jczs" />
+                    <#if jczs?exists>
+                        <#list jczs as d>                         
+                            <li><a target='_blank' href="${d.infourl}" title="${d.title}" >${d.title}</a></li>
+                        </#list>
+                    </#if>
+				</ul>
+			</div>
+			<div class="mairu">
+				<div class="title">
+					<p><img src="../../images/icon4.png" alt="">融资融券</p>
+					<span><a href="">更多》</a></span>
+				</div>
+				<ul>
+					<JRJTAG	
+                  tagtype="01"
+                  clsid="627001007" 
+                  pagesize="4" 
+                  pagecount="1"
+                   id="jczs" />
+                    <#if jczs?exists>
+                        <#list jczs as d>                         
+                            <li><a target='_blank' href="${d.infourl}" title="${d.title}" >${d.title}</a></li>
+                        </#list>
+                    </#if>
+				</ul>
+			</div>
+			<div class="rumen">
+				<div class="title">
+					<p><img src="../../images/icon4.png" alt="">创业板</p>
+					<span><a href="">更多》</a></span>
+				</div>
+				<ul>
+                <JRJTAG	
+                  tagtype="01"
+                  clsid="627001008" 
+                  pagesize="4" 
+                  pagecount="1"
+                   id="jczs" />
+                    <#if jczs?exists>
+                        <#list jczs as d>                         
+                            <li><a target='_blank' href="${d.infourl}" title="${d.title}" >${d.title}</a></li>
+                        </#list>
+                    </#if>
+				</ul>
+			</div>
+
+			
+		</div>
+		<!--#include virtual="/inc/right.html"-->
+		
+		
+	</div>
+
+			<!--#include virtual="/inc/footer.html"-->
+			
+			<script type="text/javascript">
+              $(document).ready(function(){
+				$('a').click(function(){
+					$(this).css('color','#821c21')
+				});
+				$('.nav ul li').mousemove(function(){
+					$('.nav ul li p').css('display','none');
+					$(this).find('p').css('display','block');
+
+				});
+				$('.nav ul li p span').mouseenter(function(){
+				  $('.nav ul li p span').css('background','none')
+				  $(this).css('background','#6b090e');	
+				});
+				$('.nav ul li p span').mouseleave(function(){
+				  $('.nav ul li p').css('display','none')
+				  	
+				});
+				$('.wx').mouseenter(function(){
+					$('.after').css('display','block')
+					});
+				$('.wx').mouseleave(function(){
+					$('.after').css('display','none')
+					});
+			})
+			</script>
+		
+
+</body>
+</html>

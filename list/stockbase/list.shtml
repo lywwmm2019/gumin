@@ -1,0 +1,87 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:wb="http://open.weibo.com/wb">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gbk" />
+	<title>基础知识</title>
+	<link rel="stylesheet" href="../../css/jinjie.css">
+	<script type="text/javascript" src="../../js/jquery-1.8.3.min.js"></script>
+	<script type="text/javascript" src="../../js/bootstrap.min.js"></script>
+</head>
+<body>
+	<!--#include virtual="/inc/header.html"-->
+	<img class="banner" src="../../images/rumenbanner.png" alt="">
+	<div class="link gupiaorumen">
+				<div class="title">
+					<p><img src="../../images/a.png" alt="">首页--股票入门--基础知识</p>
+				</div>
+			</div>
+	<div class="content ">
+		<div class="content-left">
+			
+			<div class="rumen">
+				<div class="title">
+					<p><img src="../../images/a.png" alt="">基础知识</p>
+					<span><a href="">更多》</a></span>
+				</div>
+				<ul>
+					<li><a href="#" >主要是从开户、买卖的介绍，什么是沪市？深市？<span>04-05</span><span>文章发布机构</span></a></li>
+					<li><a href="#" >主要是从开户、买卖的介绍，什么是沪市？深市？<span>04-05</span><span>文章发布机构</span></a></li>
+					<li><a href="#" >主要是从开户、买卖的介绍，什么是沪市？深市？<span>04-05</span><span>文章发布机构</span></a></li>					
+					
+				</ul>
+			</div>
+			<div class="Page navigation" style="text-align: right;">
+			  <ul class="pagination">
+			    <li>
+			      <a href="#" aria-label="Previous">
+			        <span aria-hidden="true">上一页</span>
+			      </a>
+			    </li>
+			    <li><a href="#">1</a></li>
+			    <li><a href="#">2</a></li>
+			    <li><a href="#">3</a></li>
+			    <li><a href="#">4</a></li>
+			    <li><a href="#">5</a></li>
+			    <li>
+			      <a href="#" aria-label="Next">
+			        <span aria-hidden="true">下一页</span>
+			      </a>
+			    </li>
+			  </ul>
+		</div>
+		</div>
+		<!--#include virtual="/inc/right.html"-->
+		
+		
+	</div>
+
+			<!--#include virtual="/inc/footer.html"-->
+			
+			<script type="text/javascript">
+              $(document).ready(function(){
+				$('a').click(function(){
+					$(this).css('color','#821c21')
+				});
+				$('.nav ul li').mousemove(function(){
+					$('.nav ul li p').css('display','none');
+					$(this).find('p').css('display','block');
+
+				});
+				$('.nav ul li p span').mouseenter(function(){
+				  $('.nav ul li p span').css('background','none')
+				  $(this).css('background','#6b090e');	
+				});
+				$('.nav ul li p span').mouseleave(function(){
+				  $('.nav ul li p').css('display','none')
+				  	
+				});
+				$('.wx').mouseenter(function(){
+					$('.after').css('display','block')
+					});
+				$('.wx').mouseleave(function(){
+					$('.after').css('display','none')
+					});
+			})
+			</script>
+</body>
+</html>

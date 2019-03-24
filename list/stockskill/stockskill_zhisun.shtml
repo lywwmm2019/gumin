@@ -1,0 +1,170 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:wb="http://open.weibo.com/wb">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gbk" />
+	<title>止损技巧</title>
+	<link rel="stylesheet" href="../../css/jinjie.css">
+	<script type="text/javascript" src="../../js/jquery-1.8.3.min.js"></script>
+</head>
+<body>
+	<!--#include virtual="/inc/header.html"-->
+	
+	<JRJTAG 
+        tagtype="02" 
+        clsid="627002005" 
+        viewedit="0"
+        speccheck="1"
+        id="lbbanner" />
+        <#if lbbanner?exists>
+          <#list lbbanner as d>
+            ${d.intor}
+          </#list>
+        </#if> 
+
+	<div class="link gupiaorumen">
+		<div class="title">
+			<p style="color: #821c21; border-bottom: none;"><img src="../../images/icon5.png" alt="">首页--炒股技巧--止损技巧</p>
+		</div>
+	</div>
+	<div class="content ">
+		<div class="content-left">
+			
+			<div class="rumen">
+				<div class="title">
+					<p><img src="../../images/icon4.png" alt="">止损技巧</p>
+				</div>
+				<ul>
+					<JRJTAG	tagtype="01" clsid="627001019" pagesize="6" pagecount="10" id="zsjq" />
+                    <#if zsjq?exists>
+                        <#list zsjq as d>
+                        	<div class="shzr clear over">
+                                <li><a href="${d.infourl}" target="_blank">${d.title}</a><span>${d.makedate?string("yyyy-MM-dd")}</span><span>${d.mediasource}</span></li>
+                                
+                            </div>
+                        </#list>
+                    </#if>							
+					
+				</ul>
+			</div>
+			<div class="Page navigation" style="text-align: right;">
+				<ul class="pagination">
+				    
+				    <#assign locafilename="stockskill_zhisun">
+                        <#if (curpage>1)>
+                          <span><a href="${locafilename}.shtml">首 页</a></span>
+                          <#if curpage=2>
+                        <li><a href="${locafilename}.shtml" target="_self">上一页</a></li>
+                          <#else>
+                        <li><a href="${locafilename}-${curpage-1}.shtml" target="_self">上一页</a></li>
+                          </#if>
+                        </#if>
+                        <#list 1..pagecount as n>
+                              <#if n=1>
+                                <#if curpage=n>
+                                  <li><a class="cur">${n}</a></li>
+                                <#else>
+                                  <li><a href="${locafilename}.shtml" target="_self">${n}</a></li>
+                                </#if>
+                              <#else>
+                                <#if curpage=n>
+                                  <li><a class="cur">${n}</a></li>
+                                <#else>
+                                  <li><a href="${locafilename}-${n}.shtml" target="_self">${n}</a></li>
+                                </#if> 
+                             </#if>
+                        </#list>
+                        <#if (curpage!=pagecount)>
+                        <li><a href="${locafilename}-${curpage+1}.shtml" target="_self">下一页</a></li>
+                        </#if>
+				</ul>
+			</div>
+		</div>
+		
+        <div class="content-right">
+			
+			<div class="niugu">
+				<div class="title">
+					<p style="color: #821c21;">栏目导航</p>
+				</div>
+				
+				<ul>
+					<JRJTAG 
+                    tagtype="02" 
+                    clsid="627002001" 
+                    pagesize="6" 
+                    pagecount="1" 
+                    viewedit="0"
+                    speccheck="1"
+                    id="lmdh" />
+                    <#if lmdh?exists>
+                      <#list lmdh as d>
+                        ${d.intor}
+                      </#list>
+                    </#if>
+				</ul>
+			</div>
+			<div class="dianji">
+				<div class="title">
+					<p style="color: #821c21;">股票书籍</p>
+				</div>
+				<ul>
+					<JRJTAG 
+                    tagtype="02" 
+                    clsid="627002002" 
+                    pagesize="6" 
+                    pagecount="1" 
+                    viewedit="0"
+                    speccheck="1"
+                    id="gpsj" />
+                    <#if gpsj?exists>
+                      <#list gpsj as d>
+                        ${d.intor}
+                      </#list>
+                    </#if>
+				</ul>
+			</div>
+			
+			<div class="saoma">
+				<p>股民大学订阅号 <br>简介和广告词</p>
+				<img src="../../images/saoma.png" alt="">
+			</div>
+		</div>		
+		
+	</div>
+
+		<!--#include virtual="/inc/footer.html"-->
+		
+		<script type="text/javascript">
+          $(document).ready(function(){
+			$('a').click(function(){
+				$(this).css('color','#821c21')
+			});
+			$('.nav ul li').mousemove(function(){
+				$('.nav ul li p').css('display','none');
+				$(this).find('p').css('display','block');
+
+			});
+			$('.nav ul li p span').mouseenter(function(){
+			  $('.nav ul li p span').css('background','none')
+			  $(this).css('background','#6b090e');	
+			});
+			$('.nav ul li p span').mouseleave(function(){
+			  $('.nav ul li p').css('display','none')
+			  	
+			});
+			$('.wx').mouseenter(function(){
+				$('.after').css('display','block')
+			});
+			$('.wx').mouseleave(function(){
+				$('.after').css('display','none')
+			});
+			$('.nav>ul>li>a').on('dblclick',function(){
+				$(this).css('color','white')
+			});
+			$('.nav>ul>li>a').on('click',function(){
+				$(this).css('color','white')
+			});
+		})
+		</script>
+</body>
+</html>

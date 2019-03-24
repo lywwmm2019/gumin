@@ -1,0 +1,95 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gbk" />
+<title>股民大学</title>
+<link rel="stylesheet" href="../css/list.css">
+<script type="text/javascript" src="../js/jquery-1.8.3.min.js"></script>
+</head>
+<body>
+    <!--#include virtual="/inc/header.html"-->
+
+    
+	<img class="banner" src="../images/rumenbanner.png" alt="">
+	<div class="link gupiaorumen">
+				<div class="title">
+					
+                     <#if (clsid==627001002||clsid==627001003||clsid==627001004||clsid==627001005||clsid==627001006||clsid==627001007||clsid==627001008)>
+                       <p style="border-bottom:none;"><img src="../images/icon5.png" alt="">首页--股票入门--${clsname}</p>
+                    
+                     <#elseif (clsid==627001009||clsid==627001010||clsid==627001011)>
+                       <p style="border-bottom:none;"><img src="../images/icon5.png" alt="">首页--名师点评--${clsname}</p>
+                     <#elseif (clsid==627001012||clsid==627001013||clsid==627001014||clsid==627001015||clsid==627001016||clsid==627001017)>
+                       <p style="border-bottom:none;"><img src="../images/icon5.png" alt="">首页--技术指标--${clsname}</p> 
+                     <#elseif (clsid==627001018||clsid==627001019||clsid==627001020||clsid==627001021||clsid==627001022||clsid==627001023||clsid==627001024||clsid==627001025)>
+                       <p style="border-bottom:none;"><img src="../images/icon5.png" alt="">首页--炒股技巧--${clsname}</p> 
+                     <#elseif (clsid==627001026||clsid==627001027||clsid==627001028)>
+                       <p style="border-bottom:none;"><img src="../images/icon5.png" alt="">首页--经典理论--${clsname}</p>
+                     <#elseif (clsid==627001029||clsid==627001030||clsid==627001031)>
+                       <p style="border-bottom:none;"><img src="../images/icon5.png" alt="">首页--操盘心得--${clsname}</p>
+                     <#elseif (clsid==627001032||clsid==627001033||clsid==627001034||clsid==627001035)>
+                       <p style="border-bottom:none;"><img src="../images/icon5.png" alt="">首页--股票书籍--${clsname}</p> 
+                     <#elseif (clsid==627001036||clsid==627001037||clsid==627001038)>
+                       <p style="border-bottom:none;"><img src="../images/icon5.png" alt="">首页--进阶教程--${clsname}</p>      
+                    </#if>
+                     <!--<#if (clid=="公司新闻"||clsname=="公司公告"||clsname=="媒体报道"||clsname=="社会责任") >
+                        <p class="mbx_nav">关于我们> <span class="now" id="clname">${clsname}</span></p>
+                        <#else>
+                        <p class="mbx_nav">研究中心> <span class="now" id="clname">${clsname}</span></p>
+                     </#if>
+                     <#if x == 1>
+                        x is 1
+                      <#elseif x == 2>
+                        x is 2
+                      <#elseif x == 3>
+                        x is 3
+                      </#if>
+                     -->
+				</div>
+			</div>
+	<div class="content ">
+		<div class="content-left">
+			<div class="article">
+           	  <h4>${title}</h4>
+               <div class="atitle">
+                <span class="timer">${pubDate?string("yyyy年-MM月-dd日")}</span>
+                <span class="source">${mediaSource}</span>
+                <span class="share">
+                   <div class="bdsharebuttonbox">
+                   <a href="#" class="bds_more" data-cmd="more"></a>
+                   <a href="#" class="bds_sqq" data-cmd="sqq"></a>
+                   <a href="#" class="bds_tsina" data-cmd="tsina"></a>
+                   <a href="#" class="bds_weixin" data-cmd="weixin"></a>
+                   </div>
+                </span>
+              </div>
+              <div class="content">
+              	${content}
+              </div>
+            </div>
+		</div>
+      <!--content-right-->	
+    <!--#include virtual="/inc/right.html"-->
+    <!--content-right-end-->
+    </div>
+
+		
+	
+    <!--#include virtual="/inc/footer.html"-->
+    <!--<div class="link clear">
+				<div class="title">
+					<p><img src="../images/a.png" alt="">友情链接</p>
+				</div>
+				<p><span><a href="">金融界网站</a></span><span><a href="">上证综研</a></span><span><a href="">明福金融研究所</a></span><span><a href="">锦煊黄金</a></span></p>
+				
+			</div>
+			<div class="footer">
+				<p><a href="">联系我们</a> &nbsp;|&nbsp; <a href="">关于本站</a> &nbsp;|&nbsp; <a href="">本站地图</a> &nbsp;|&nbsp; <a href="">负责声明</a></p>
+				<p>Copyright &copy; 0000-0000备案号：粤ICP备xxxxxxxxx号 网络视听许可证：xxxxxxx号 增值电信业务经营许可证：粤xxxxxxxxx<br>关于同意证券时报设立互联网站并提供新闻信息服务的批复</p>
+			</div>-->
+			
+			
+			
+            <script>window._bd_share_config={"common":{"bdSnsKey":{},"bdText":"","bdMini":"2","bdPic":"","bdStyle":"0","bdSize":"16"},"share":{},"image":{"viewList":["qzone","tsina","tqq","renren","weixin"],"viewText":"分享到：","viewSize":"16"},"selectShare":{"bdContainerClass":null,"bdSelectMiniList":["qzone","tsina","tqq","renren","weixin"]}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];</script>
+</body>
+</html>

@@ -1,0 +1,380 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:wb="http://open.weibo.com/wb">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gbk" />
+	<title>股民大学</title>
+	<link rel="stylesheet" href="./css/index.css">
+	<script type="text/javascript" src="./js/jquery-1.8.3.min.js"></script>
+</head>
+<body>
+		 
+	<!--#include virtual="/inc/header.html"-->
+
+	<div class="content ">
+		<div class="content-left">
+			<div class="xiaobian">
+				<div class="title">
+					<p><img src="./images/a.png" alt="">小编推荐</p>
+				</div>
+				<div class="box">
+					<JRJTAG 
+	                    tagtype="02" 
+	                    clsid="627002007" 
+	                    viewedit="0"
+	                    speccheck="1"
+	                    id="syxbtj" />
+	                    <#if syxbtj?exists>
+	                      <#list syxbtj as d>
+	                        ${d.intor}
+	                      </#list>
+	                    </#if>
+               </div>
+			</div>
+			<div class="xiaobian gushi">
+				<div class="title">
+					<p><img src="./images/icon1.png" alt="">股市评论</p>
+				</div>
+				<div class="box">
+					
+					<ul class="yjzx_research">
+		                  <JRJTAG	
+		                tagtype="01"
+		                clsid="627001009"
+		                pagesize="7"  
+		                pagecount="1"
+		                duplicate="1"
+		                 id="gspl" />
+		                  	<#if gspl?exists>
+		                      	<#list gspl as d> 
+		                      		<#if d_index == 0>
+				                       <li>
+				                    	<a target="_blank" href="${d.infourl}">
+				                            <img width="112" height="88" class="fl" src="http://img.zhengjin99.com/web/gumin//jichuzhishi.jpg"></a>
+				                            	<div class="fr" style="float: right; display: inline;">
+				                                	<p class="pr" style="position: relative; zoom: 1; max-width: 208px;">${jrjfund.subgbk(d.description,70)}...<a target="_blank" href="${d.infourl}">[详细]</a></p>
+				                        		</div>
+                                      </li>
+				                   <#elseif d_index!=0>    
+				                    <li><a target='_blank' href="${d.infourl}" title="${d.title}" >${d.title}</a></li>     
+				                    
+				                    </#if>
+		                      	</#list>
+		                  	</#if>
+					</ul>
+			    </div>
+			</div>
+
+
+			
+			<JRJTAG 
+			    tagtype="02" 
+			    clsid="627002006" 
+			    viewedit="0"
+			    speccheck="1"
+			    id="sybanner" />
+			    <#if sybanner?exists>
+			      <#list sybanner as d>
+			        ${d.intor}
+			      </#list>
+			    </#if> 
+			
+			<div class="rumen">
+				<div class="title">
+					<p><img src="./images/icon4.png" alt="">股票入门</p>
+					<span><a href="/list/stockbase/stockbase_index_gprm.shtml">更多》</a></span>
+				</div>
+				<ul>
+                  <JRJTAG	
+                  tagtype="01"
+                  clsid="627001002" 
+                  pagesize="4" 
+                  pagecount="1"
+                   id="gprm" />
+                    <#if gprm?exists>
+                        <#list gprm as d>                         
+                            <li><a target='_blank' href="${d.infourl}" title="${d.title}" >${d.title}</a></li>
+                        </#list>
+                    </#if>
+				</ul>
+			</div>
+			<div class="mairu">
+				<div class="title">
+					<p><img src="./images/icon4.png" alt="">买入技巧</p>
+					<span><a href="/list/stockskill/stockskill_buy.shtml">更多》</a></span>
+				</div>
+				<ul>
+                  <JRJTAG	
+                  tagtype="01"
+                  clsid="627001019" 
+                  pagesize="4" 
+                  pagecount="1"
+                   id="mrjq" />
+                    <#if mrjq?exists>
+                        <#list mrjq as d>                         
+                            <li><a target='_blank' href="${d.infourl}" title="${d.title}" >${d.title}</a></li>
+                        </#list>
+                    </#if>
+				</ul>
+			</div>
+			<div class="rumen">
+				<div class="title">
+					<p><img src="./images/icon4.png" alt="">解套技巧</p>
+					<span><a href="/list/stockskill/stockskill_jietao.shtml">更多》</a></span>
+				</div>
+				<ul>
+                  <JRJTAG	
+                  tagtype="01"
+                  clsid="627001022" 
+                  pagesize="4" 
+                  pagecount="1"
+                   id="jtjq" />
+                    <#if jtjq?exists>
+                        <#list jtjq as d>                         
+                            <li><a target='_blank' href="${d.infourl}" title="${d.title}" >${d.title}</a></li>
+                        </#list>
+                    </#if>
+				</ul>
+			</div>
+			<div class="mairu">
+				<div class="title">
+					<p><img src="./images/icon4.png" alt="">K线技术</p>
+					<span><a href="/list/technology/technology_k-line.shtml">更多》</a></span>
+				</div>
+				<ul>
+                  <JRJTAG	
+                  tagtype="01"
+                  clsid="627001012" 
+                  pagesize="4" 
+                  pagecount="1"
+                   id="kxjs" />
+                    <#if kxjs?exists>
+                        <#list kxjs as d>                         
+                            <li><a target='_blank' href="${d.infourl}" title="${d.title}" >${d.title}</a></li>
+                        </#list>
+                    </#if>
+				</ul>
+			</div>
+			<div class="rumen">
+				<div class="title">
+					<p><img src="./images/icon4.png" alt="">MACD</p>
+					<span><a href="/list/technology/technology_macd.shtml">更多》</a></span>
+				</div>
+				<ul>
+                  <JRJTAG	
+                  tagtype="01"
+                  clsid="627001015" 
+                  pagesize="4" 
+                  pagecount="1"
+                   id="macd" />
+                    <#if macd?exists>
+                        <#list macd as d>                         
+                            <li><a target='_blank' href="${d.infourl}" title="${d.title}" >${d.title}</a></li>
+                        </#list>
+                    </#if>
+				</ul>
+			</div>
+			<div class="mairu">
+				<div class="title">
+					<p><img src="./images/icon4.png" alt="">交易指南</p>
+					<span><a href="/list/stockbase/stockbase_jiaoyizhinan.shtml">更多》</a></span>
+				</div>
+				<ul>
+                  <JRJTAG	
+                  tagtype="01"
+                  clsid="627001003" 
+                  pagesize="4" 
+                  pagecount="1"
+                   id="jyzn" />
+                    <#if jyzn?exists>
+                        <#list jyzn as d>                         
+                            <li><a target='_blank' href="${d.infourl}" title="${d.title}" >${d.title}</a></li>
+                        </#list>
+                    </#if>
+				</ul>
+			</div>
+			<div class="rumen">
+				<div class="title">
+					<p><img src="./images/icon4.png" alt="">融资融券</p>
+					<span><a href="/list/stockbase/stockbase_rongzirongquan.shtml">更多》</a></span>
+				</div>
+				<ul>
+                  <JRJTAG	
+                  tagtype="01"
+                  clsid="627001007" 
+                  pagesize="4" 
+                  pagecount="1"
+                   id="rzzj" />
+                    <#if rzzj?exists>
+                        <#list rzzj as d>                         
+                            <li><a target='_blank' href="${d.infourl}" title="${d.title}" >${d.title}</a></li>
+                        </#list>
+                    </#if>
+				</ul>
+			</div>
+			<div class="mairu">
+				<div class="title">
+					<p><img src="./images/icon4.png" alt="">创业板</p>
+					<span><a href="/list/stockbase/stockbase_chuangyeban.shtml">更多》</a></span>
+				</div>
+				<ul>
+                  <JRJTAG	
+                  tagtype="01"
+                  clsid="627001008" 
+                  pagesize="4" 
+                  pagecount="1"
+                   id="cyb" />
+                    <#if cyb?exists>
+                        <#list cyb as d>                         
+                            <li><a target='_blank' href="${d.infourl}" title="${d.title}" >${d.title}</a></li>
+                        </#list>
+                    </#if>
+				</ul>
+			</div>
+		</div>
+		<div class="content-right clear">
+			<div class="ticai">
+				<div class="title">
+					<p><img src="./images/icon2.png" alt="">题材概念</p>
+				</div>
+				
+				<ul id="bian">
+					<JRJTAG 
+                    tagtype="02" 
+                    clsid="627002003" 
+                    viewedit="0"
+                    speccheck="1"
+                    id="sytcgn" />
+                    <#if sytcgn?exists>
+                      <#list sytcgn as d>
+                        ${d.intor}
+                      </#list>
+                    </#if>
+				</ul>
+
+			</div>
+
+			<div class="niugu">
+				<div class="title">
+					<p><img src="./images/icon3.png" alt="">牛股池</p>
+				</div>
+				
+				<ul>
+					 <JRJTAG	tagtype="01" clsid="627001011" pagesize="6" pagecount="1" id="ngc" />
+	                    <#if ngc?exists>
+	                        <#list ngc as d>
+	                        	<div class="shzr clear over">
+	                                <li><span>${d.mediasource}</span><a href="${d.infourl}" target="_blank">${d.title}</a><span class="time">${d.makedate?string("MM-dd")}</span></li>
+	                                
+	                            </div>
+	                        </#list>
+	                    </#if>	
+				</ul>
+			</div>
+			<div class="dianji">
+				<div class="title">
+					<p>今日点击排行</p>
+				</div>
+				
+				<ul>
+					<JRJTAG 
+                      tagtype="03" 
+                      clsid="627" 
+                      pagesize="6" 
+                      pagecount="1" 
+                      rankhours="-24"
+                      id="djph" />
+                      <#if djph?exists>
+                      <#list djph as d>
+                         <li><i>${d_index+1}</i><a href="${d.infourl}" title="${d.title}">${d.title}</a><span class="time">${d.makedate?string("MM-dd")}</span></li>
+                      </#list>
+                      </#if>
+				</ul>
+			</div>
+			<div class="dianji none">
+				<div class="title">
+					<p>热门推荐</p>
+				</div>
+				
+				<ul>
+					<JRJTAG 
+                      tagtype="03" 
+                      clsid="627" 
+                      pagesize="6" 
+                      pagecount="1" 
+                      rankhours="-168"
+                      id="rmtj" />
+                      <#if rmtj?exists>
+                      <#list rmtj as d>
+                         <li><i>${d_index+1}</i><a href="${d.infourl}" title="${d.title}">${d.title}</a><span class="time">${d.makedate?string("MM-dd")}</span></li>
+                      </#list>
+                      </#if>
+				</ul>
+			</div>
+			<div class="saoma">
+				<p>股民大学订阅号 <br>简介和广告词</p>
+				<img src="./images/saoma.png" alt="">
+			</div>
+		</div>
+		
+		
+	</div>
+	<div class="shuji clear">
+		<div class="title">
+			<p><img src="./images/icon4.png" alt="">股票书籍</p>
+			<span><a href="">更多》</a></span>
+		</div>
+		
+		<ul>
+
+        <JRJTAG 
+            tagtype="02" 
+            clsid="627002004" 
+            viewedit="0"
+            speccheck="1"
+            id="sygpsj" />
+            <#if sygpsj?exists>
+              <#list sygpsj as d>
+                ${d.intor}
+              </#list>
+            </#if>
+
+		</ul>
+	</div>
+
+
+		<!--#include virtual="/inc/footer.html"-->
+		
+		<script type="text/javascript">
+          $(document).ready(function(){
+			$('.nav ul li').mousemove(function(){
+				$('.nav ul li p').css('display','none');
+				$(this).find('p').css('display','block');
+
+			});
+			$('.nav ul li p span').mouseenter(function(){
+			  $('.nav ul li p span').css('background','none')
+			  $(this).css('background','#6b090e');	
+			});
+			$('.nav ul li p span').mouseleave(function(){
+			  $('.nav ul li p').css('display','none')
+			  	
+			});
+			$('.wx').mouseenter(function(){
+				$('.after').css('display','block')
+			});
+			$('.wx').mouseleave(function(){
+				$('.after').css('display','none')
+			});
+
+			$('.nav>ul>li>a').on('dblclick',function(){
+				$(this).css('color','white')
+			})
+			$('.nav>ul>li>a').on('click',function(){
+				$(this).css('color','white')
+			})
+
+		})
+		</script>
+
+</body>
+</html>

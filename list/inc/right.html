@@ -1,0 +1,49 @@
+		    <div class="content-right">
+			
+			<div class="niugu">
+				<div class="title">
+					<p style="color: #821c21;">栏目导航</p>
+				</div>
+				
+				<ul>
+					<JRJTAG 
+                    tagtype="02" 
+                    clsid="627002001" 
+                    pagesize="6" 
+                    pagecount="1" 
+                    viewedit="0"
+                    speccheck="1"
+                    id="lmdh" />
+                    <#if lmdh?exists>
+                      <#list lmdh as d>
+                        ${d.intor}
+                      </#list>
+                    </#if>
+				</ul>
+			</div>
+			<div class="dianji">
+				<div class="title">
+					<p style="color: #821c21;">股票书籍</p>
+				</div>
+				<ul>
+					<JRJTAG 
+                    tagtype="02" 
+                    clsid="627002002" 
+                    pagesize="6" 
+                    pagecount="1" 
+                    viewedit="0"
+                    speccheck="1"
+                    id="gpsj" />
+                    <#if gpsj?exists>
+                      <#list gpsj as d>
+                        ${d.intor}
+                      </#list>
+                    </#if>
+				</ul>
+			</div>
+			
+			<div class="saoma">
+				<p>股民大学订阅号 <br>简介和广告词</p>
+				<img src="../../images/saoma.png" alt="">
+			</div>
+		</div>

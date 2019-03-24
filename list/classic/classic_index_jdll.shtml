@@ -1,0 +1,178 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:wb="http://open.weibo.com/wb">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gbk" />
+	<title>经典理论</title>
+	<link rel="stylesheet" href="../../css/jinjie.css">
+	<script type="text/javascript" src="../../js/jquery-1.8.3.min.js"></script>
+</head>
+<body>
+	<!--#include virtual="/inc/header.html"-->
+
+	<JRJTAG 
+        tagtype="02" 
+        clsid="627002005" 
+        viewedit="0"
+        speccheck="1"
+        id="lbbanner" />
+        <#if lbbanner?exists>
+          <#list lbbanner as d>
+            ${d.intor}
+          </#list>
+        </#if> 
+	
+	<div class="link gupiaorumen">
+		<div class="title">
+			<p style="color: #821c21; border-bottom: none;"><img src="../../images/icon5.png" alt="">首页--经典理论</p>
+		</div>
+	</div>
+	<div class="content ">
+		<div class="content-left">
+			<div class="rumen">
+				<div class="title">
+					<p><img src="../../images/icon4.png" alt="">江恩理论</p>
+					<span><a href="/list/classic/classic_jiangen.shtml">更多》</a></span>
+				</div>
+				<ul>
+					<JRJTAG	
+                  tagtype="01"
+                  clsid="627001026" 
+                  pagesize="4" 
+                  pagecount="1"
+                   id="jell" />
+                    <#if jell?exists>
+                        <#list jell as d>                         
+                            <li><a target='_blank' href="${d.infourl}" title="${d.title}" >${d.title}</a></li>
+                        </#list>
+                    </#if>
+				</ul>
+			</div>
+
+			<div class="rumen">
+				<div class="title">
+					<p><img src="../../images/icon4.png" alt="">道氏理论</p>
+					<span><a href="/list/classic/classic_daoshi.shtml">更多》</a></span>
+				</div>
+				<ul>
+					<JRJTAG	
+                  tagtype="01"
+                  clsid="627001027" 
+                  pagesize="4" 
+                  pagecount="1"
+                   id="dsll" />
+                    <#if dsll?exists>
+                        <#list dsll as d>                         
+                            <li><a target='_blank' href="${d.infourl}" title="${d.title}" >${d.title}</a></li>
+                        </#list>
+                    </#if>
+				</ul>
+			</div>
+
+			<div class="rumen">
+				<div class="title">
+					<p><img src="../../images/icon4.png" alt="">波浪理论</p>
+					<span><a href="/list/classic/classic_bolang.shtml">更多》</a></span>
+				</div>
+				<ul>
+					<JRJTAG	
+                  tagtype="01"
+                  clsid="627001028" 
+                  pagesize="4" 
+                  pagecount="1"
+                   id="blll" />
+                    <#if blll?exists>
+                        <#list blll as d>                         
+                            <li><a target='_blank' href="${d.infourl}" title="${d.title}" >${d.title}</a></li>
+                        </#list>
+                    </#if>
+				</ul>
+			</div>
+			
+		</div>
+		
+        <div class="content-right">
+			<div class="niugu">
+				<div class="title">
+					<p style="color: #821c21;">栏目导航</p>
+				</div>
+				<ul>
+					<JRJTAG 
+                    tagtype="02" 
+                    clsid="627002001" 
+                    pagesize="6" 
+                    pagecount="1" 
+                    viewedit="0"
+                    speccheck="1"
+                    id="lmdh" />
+                    <#if lmdh?exists>
+                      <#list lmdh as d>
+                        ${d.intor}
+                      </#list>
+                    </#if>
+				</ul>
+			</div>
+
+			<div class="dianji">
+				<div class="title">
+					<p style="color: #821c21;">股票书籍</p>
+				</div>
+				<ul>
+					<JRJTAG 
+                    tagtype="02" 
+                    clsid="627002002" 
+                    pagesize="6" 
+                    pagecount="1" 
+                    viewedit="0"
+                    speccheck="1"
+                    id="gpsj" />
+                    <#if gpsj?exists>
+                      <#list gpsj as d>
+                        ${d.intor}
+                      </#list>
+                    </#if>
+				</ul>
+			</div>
+			
+			<div class="saoma">
+				<p>股民大学订阅号 <br>简介和广告词</p>
+				<img src="../../images/saoma.png" alt="">
+			</div>
+		</div>
+				
+	</div>
+
+
+			<!--#include virtual="/inc/footer.html"-->
+			
+			<script type="text/javascript">
+              $(document).ready(function(){
+				$('.nav ul li').mousemove(function(){
+					$('.nav ul li p').css('display','none');
+					$(this).find('p').css('display','block');
+
+				});
+				$('.nav ul li p span').mouseenter(function(){
+				  $('.nav ul li p span').css('background','none')
+				  $(this).css('background','#6b090e');	
+				});
+				$('.nav ul li p span').mouseleave(function(){
+				  $('.nav ul li p').css('display','none')
+				  	
+				});
+				$('.wx').mouseenter(function(){
+					$('.after').css('display','block')
+				});
+				$('.wx').mouseleave(function(){
+					$('.after').css('display','none')
+				});
+				$('.nav>ul>li>a').on('dblclick',function(){
+					$(this).css('color','white')
+				});
+				$('.nav>ul>li>a').on('click',function(){
+					$(this).css('color','white')
+				});
+			})
+			</script>
+
+</body>
+</html>

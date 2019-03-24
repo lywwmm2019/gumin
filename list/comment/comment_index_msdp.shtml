@@ -1,0 +1,218 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:wb="http://open.weibo.com/wb">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gbk" />
+	<title>名师点评</title>
+	<link rel="stylesheet" href="../../css/dianping.css">
+	<script type="text/javascript" src="../../js/jquery-1.8.3.min.js"></script>
+</head>
+<body>
+	<!--#include virtual="/inc/header.html"-->
+
+	<JRJTAG 
+        tagtype="02" 
+        clsid="627002005" 
+        viewedit="0"
+        speccheck="1"
+        id="lbbanner" />
+        <#if lbbanner?exists>
+          <#list lbbanner as d>
+            ${d.intor}
+          </#list>
+        </#if> 
+	
+	<div class="link gupiaorumen">
+		<div class="title">
+			<p style="border-bottom: none; color: #821c21;"><img src="../../images/icon5.png" alt="">首页--名家点评</p>
+		</div>
+	</div>
+	<div class="content ">
+		<div class="content-left">
+			
+			<div class="rumen">
+				<div class="title">
+					<p><img src="../../images/icon1.png" alt="">股市评论</p>
+					<span><a href="/list/comment/comment_comment.shtml">更多》</a></span>
+				</div>
+				<ul>
+					
+					<JRJTAG	tagtype="01" clsid="627001009" pagesize="6" pagecount="10" id="gspl" />
+                    <#if gspl?exists>
+                        <#list gspl as d>
+                        	<div class="shzr clear over">
+                                <li><img src="http://img.zhengjin99.com/web/gumin/${d.id?c}.jpg" width="184" height="137" /><a href="${d.infourl}" target="_blank">${d.title}</a><p>${d.author}</p><p>${d.description}</p><span>${d.makedate?string("yyyy-MM-ddHH:mm")}</span><span>${d.mediasource}</span></li>
+                            </div>
+                        </#list>
+                    </#if>
+					
+					<JRJTAG	tagtype="01" clsid="627001009" pagesize="6" pagecount="10" id="gspl" />
+                    <#if gspl?exists>
+                        <#list gspl as d>
+                        	<div class="shzr clear over">
+                                <li><img src="http://img.zhengjin99.com/web/gumin/${d.id?c}.jpg" width="184" height="137" /><a href="${d.infourl}" target="_blank">${d.title}</a><p>${d.author}</p><p>${d.description}</p><span>${d.makedate?string("yyyy-MM-ddHH:mm")}</span><span>${d.mediasource}</span></li>
+                            </div>
+                        </#list>
+                    </#if>
+
+				</ul>
+			</div>
+			
+			<div class="rumen">
+				<div class="title">
+					<p><img src="../../images/icon2.png" alt="">题材概念</p>
+					<span><a href="/list/comment/comment_stock-pool.shtml">更多》</a></span>
+				</div>
+				<ul>
+					<JRJTAG	tagtype="01" clsid="627001011" pagesize="6" pagecount="10" id="ngc" />
+                    <#if ngc?exists>
+                        <#list ngc as d>
+                        	<div class="shzr clear over">
+                                <li><img src="http://img.zhengjin99.com/web/gumin/${d.id?c}.jpg" width="184" height="137" /><a href="${d.infourl}" target="_blank">${d.title}</a><p>${d.author}</p><p>${d.description}</p><span>${d.makedate?string("yyyy-MM-ddHH:mm")}</span><span>${d.mediasource}</span></li>
+                            </div>
+                        </#list>
+                    </#if>
+
+                    <JRJTAG	tagtype="01" clsid="627001011" pagesize="6" pagecount="10" id="ngc" />
+                    <#if ngc?exists>
+                        <#list ngc as d>
+                        	<div class="shzr clear over">
+                                <li><img src="http://img.zhengjin99.com/web/gumin/${d.id?c}.jpg" width="184" height="137" /><a href="${d.infourl}" target="_blank">${d.title}</a><p>${d.author}</p><p>${d.description}</p><span>${d.makedate?string("yyyy-MM-ddHH:mm")}</span><span>${d.mediasource}</span></li>
+                            </div>
+                        </#list>
+                    </#if>
+
+                    <JRJTAG	tagtype="01" clsid="627001011" pagesize="6" pagecount="10" id="msdp" />
+                    <#if msdp?exists>
+                        <#list msdp as d>
+                        	<div class="shzr clear over">
+                                <li><img src="http://img.zhengjin99.com/web/gumin/${d.id?c}.jpg" width="184" height="137" /><a href="${d.infourl}" target="_blank">${d.title}</a><p>${d.author}</p><p>${d.description}</p><span>${d.makedate?string("yyyy-MM-ddHH:mm")}</span><span>${d.mediasource}</span></li>
+                            </div>
+                        </#list>
+                    </#if>
+
+
+				</ul>
+			</div>
+			
+
+			<div class="rumen">
+				<div class="title">
+					<p><img src="../../images/icon3.png" alt="">牛股池</p>
+					<span><a href="/list/comment/comment_concept.shtml">更多》</a></span>
+				</div>
+				<ul>
+					<JRJTAG	tagtype="01" clsid="627001010" pagesize="6" pagecount="10" id="tcgn" />
+                    <#if tcgn?exists>
+                        <#list tcgn as d>
+                        	<div class="shzr clear over">
+                                <li><img src="http://img.zhengjin99.com/web/gumin/${d.id?c}.jpg" width="184" height="137" /><a href="${d.infourl}" target="_blank">${d.title}</a><p>${d.author}</p><p>${d.description}</p><span>${d.makedate?string("yyyy-MM-ddHH:mm")}</span><span>${d.mediasource}</span></li>
+                            </div>
+                        </#list>
+                    </#if>
+
+                    <JRJTAG	tagtype="01" clsid="627001010" pagesize="6" pagecount="10" id="tcgn" />
+                    <#if tcgn?exists>
+                        <#list tcgn as d>
+                        	<div class="shzr clear over">
+                                <li><img src="http://img.zhengjin99.com/web/gumin/${d.id?c}.jpg" width="184" height="137" /><a href="${d.infourl}" target="_blank">${d.title}</a><p>${d.author}</p><p>${d.description}</p><span>${d.makedate?string("yyyy-MM-ddHH:mm")}</span><span>${d.mediasource}</span></li>
+                            </div>
+                        </#list>
+                    </#if>
+
+				</ul>
+			</div>
+			
+		</div>
+		
+        <div class="content-right">
+			
+			<div class="niugu">
+				<div class="title">
+					<p style="color: #821c21;">栏目导航</p>
+				</div>
+				
+				<ul>
+					<JRJTAG 
+                    tagtype="02" 
+                    clsid="627002001" 
+                    pagesize="6" 
+                    pagecount="1" 
+                    viewedit="0"
+                    speccheck="1"
+                    id="lmdh" />
+                    <#if lmdh?exists>
+                      <#list lmdh as d>
+                        ${d.intor}
+                      </#list>
+                    </#if>
+				</ul>
+			</div>
+			<div class="dianji">
+				<div class="title">
+					<p style="color: #821c21;">股票书籍</p>
+				</div>
+				<ul>
+					<JRJTAG 
+                    tagtype="02" 
+                    clsid="627002002" 
+                    pagesize="6" 
+                    pagecount="1" 
+                    viewedit="0"
+                    speccheck="1"
+                    id="gpsj" />
+                    <#if gpsj?exists>
+                      <#list gpsj as d>
+                        ${d.intor}
+                      </#list>
+                    </#if>
+				</ul>
+			</div>
+			
+			<div class="saoma">
+				<p>股民大学订阅号 <br>简介和广告词</p>
+				<img src="../../images/saoma.png" alt="">
+			</div>
+		</div>	
+		
+	</div>
+
+
+
+			<!--#include virtual="/inc/footer.html"-->
+			
+			<script type="text/javascript">
+              $(document).ready(function(){
+				$('a').click(function(){
+					$(this).css('color','#821c21')
+				});
+				$('.nav ul li').mousemove(function(){
+					$('.nav ul li p').css('display','none');
+					$(this).find('p').css('display','block');
+
+				});
+				$('.nav ul li p span').mouseenter(function(){
+				  $('.nav ul li p span').css('background','none')
+				  $(this).css('background','#6b090e');	
+				});
+				$('.nav ul li p span').mouseleave(function(){
+				  $('.nav ul li p').css('display','none')
+				  	
+				});
+				$('.wx').mouseenter(function(){
+					$('.after').css('display','block')
+				});
+				$('.wx').mouseleave(function(){
+					$('.after').css('display','none')
+				});
+				$('.nav>ul>li>a').on('dblclick',function(){
+					$(this).css('color','white')
+				});
+				$('.nav>ul>li>a').on('click',function(){
+					$(this).css('color','white')
+				});
+			})
+			</script>
+
+
+</body>
+</html>

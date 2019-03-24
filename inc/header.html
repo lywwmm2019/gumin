@@ -1,0 +1,111 @@
+  <div class="header">
+    <img src="../../images/logo.png" alt=""><img class="jiandan" src="../../images/jiandan.png" alt="">
+    <div class="wx">
+        <img src="../../images/wx.png"  alt="">
+        <img class='erweima' src="../../images/wx.jpg">
+    </div>
+  </div>
+
+  <div class="nav">
+    <ul>
+      <li><a href="/index.shtml" style="color:white;">首页</a></li>
+      <li><a href="/list/stockbase/stockbase_index_gprm.shtml" style="color:white;">股票入门</a>
+	<ul>
+		<li><a href="/list/stockbase/stockbase_jichuzhishi.shtml">基础知识</a></li>
+		<li><a href="/list/stockbase/stockbase_jiaoyizhinan.shtml">交易指南</a></li>
+		<li><a href="/list/stockbase/stockbase_zhengcefagui.shtml">政策法规</a></li>
+		<li><a href="/list/stockbase/stockbase_zhuanyeshuyu.shtml">专业术语</a></li>
+		<li><a href="/list/stockbase/stockbase_xuexizhinan.shtml">学习指南</a></li>
+		<li><a href="/list/stockbase/stockbase_rongzirongquan.shtml">融资融券</a></li>
+		<li><a href="/list/stockbase/stockbase_chuangyeban.shtml">创业板</a></li>
+	</ul>
+          
+      </li>
+      <li><a href="/list/comment/comment_index_msdp.shtml" style="color:white;">名师点评</a>
+      <ul>
+      	<li><a href="/list/comment/comment_comment.shtml">股市评论</a></li>
+      	<li><a href="/list/comment/comment_concept.shtml">题材概念</a></li>
+      	<li><a href="/list/comment/comment_stock-pool.shtml">牛股池</a></li>
+      </ul>
+          
+      </li>
+      <li><a href="/list/technology/technology_index_jszb.shtml" style="color:white;">技术指标</a>
+          <ul>
+             <li><a href="/list/technology/technology_k-line.shtml">K线技术</a></li>
+             <li><a href="/list/technology/technology_average-line.shtml">均线技术</a></li>
+             <li><a href="/list/technology/technology_kdj.shtml">KDJ</a></li>
+             <li><a href="/list/technology/technology_macd.shtml">MACD</a></li>
+             <li><a href="/list/technology/technology_rosi.shtml">RSI</a></li>
+             <li><a href="/list/technology/technology_boll.shtml">BOLL</a></li>
+          </ul>
+      </li>
+      <li><a href="/list/stockskill/stockskill_index_cgjq.shtml" style="color:white;">炒股技巧</a>
+          <ul>
+              <li><a href="/list/stockskill/stockskill_choice.shtml">选股技巧</a></li>
+              <li><a href="/list/stockskill/stockskill_buy.shtml">买入技巧</a></li>
+              <li><a href="/list/stockskill/stockskill_sell.shtml">卖出技巧</a></li>
+              <li><a href="/list/stockskill/stockskill_zhisun.shtml">止损技巧</a></li>
+              <li><a href="/list/stockskill/stockskill_jietao.shtml">解套技巧</a></li>
+              <li><a href="/list/stockskill/stockskill_genzhuang.shtml">跟庄技巧</a></li>
+              <li><a href="/list/stockskill/stockskill_kanpan.shtml">看盘技巧</a></li>
+              <li><a href="/list/stockskill/stockskill_zhuizhang.shtml">追涨技巧</a></li>
+          </ul>
+      </li>
+      <li><a href="/list/classic/classic_index_jdll.shtml" style="color:white;">经典理论</a>
+          <ul>
+            <li><a href="/list/classic/classic_jiangen.shtml">江恩理论</a></li>
+              <li><a href="/list/classic/classic_daoshi.shtml">道氏理论</a></li>
+              <li><a href="/list/classic/classic_bolang.shtml">波浪理论</a></li>
+          </ul>
+      </li>
+      <li><a href="/list/stockstudy/stockstudy_index_cpxd.shtml" style="color:white;">操盘心得</a>
+        <ul>
+            <li><a href="/list/stockstudy/stockstudy_touzi.shtml">投资故事</a></li>
+              <li><a href="/list/stockstudy/stockstudy_canchan.shtml">参禅悟道</a></li>
+              <li><a href="/list/stockstudy/stockstudy_bingfa.shtml">兵法实战</a></li>
+          </ul>
+      </li>
+      <li><a href="/list/stockbook/stockbook_index_gpsj.shtml" style="color:white;">股票书籍</a>
+          <ul>
+            <li><a href="/list/stockbook/stockbook_knowledge-obj.shtml">股票知识类</a></li>
+              <li><a href="/list/stockbook/stockbook_analyse-obj.shtml">技术分析类</a></li>
+              <li><a href="/list/stockbook/stockbook_skill-obj.shtml">炒股技巧类</a></li>
+              <li><a href="/list/stockbook/stockbook_money-obj.shtml">投资理财类</a></li>
+          </ul>
+      </li>
+      <li><a href="/list/teach/teach_index_jjjc.shtml" style="color:white;">进阶教程</a>
+          <ul>
+            <li><a href="/list/teach/teach_first.shtml">初级教程</a></li>
+            <li><a href="/list/teach/teach_middle.shtml">中级教程</a></li>
+            <li><a href="/list/teach/teach_top.shtml">高级教程</a></li>
+          </ul>
+      </li>
+    </ul>
+  </div>
+   <script type="text/javascript">
+              $(document).ready(function(){
+        $('a').click(function(){
+          $(this).css('color','#821c21')
+        });
+        $('.nav ul li').mousemove(function(){
+          $('.nav ul li p').css('display','none');
+          $(this).find('p').css('display','block');
+
+        });
+        $('.nav ul li p span').mouseenter(function(){
+          $('.nav ul li p span').css('background','none')
+          $(this).css('background','#6b090e');  
+        });
+        $('.nav ul li p span').mouseleave(function(){
+          $('.nav ul li p').css('display','none')
+            
+        });
+        $('.wx').mouseenter(function(){
+          $('.wxafter').css('display','block')
+          });
+        $('.wx').mouseleave(function(){
+          $('.wxafter').css('display','none')
+          });
+      })
+      </script>
+     <script src="http://js.jrjimg.cn/common/foot/jrj_dcs_tag-min.js" charset="utf-8"></script>
